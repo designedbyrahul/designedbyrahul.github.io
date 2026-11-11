@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahul Kanda — Creative Graphic Designer</title>
+  <meta name="description" content="Rahul Kanda — creative graphic designer & video editor. Branding, social media creatives, posters, UI/UX, motion and event films." />
+  <meta name="theme-color" content="#0c0c0e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Rahul Kanda" />
+  <meta property="og:title" content="Rahul Kanda — Graphic Designer &amp; Video Editor" />
+  <meta property="og:description" content="Welcome to my design desk — branding, social media creatives, posters, motion &amp; event films." />
+  <meta property="og:image" content="https://designedbyrahul.github.io/assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Rahul Kanda's illustrated design desk" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rahul Kanda — Graphic Designer &amp; Video Editor" />
+  <meta name="twitter:description" content="Branding, social media creatives, posters, motion &amp; event films." />
+  <meta name="twitter:image" content="assets/og.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff5b1f'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-size='28' fill='%230c0c0e'%3ERK%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Manrope:wght@300..800&family=Instrument+Serif:ital@0;1&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=18" />
+</head>
+<body class="is-loading">
+
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__name"><span>Setting up</span><span>the desk…</span></div>
+    <div class="loader__count"><span id="loaderCount">0</span>%</div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel">View</span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="Rahul Kanda — home">RK<span>.</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about" data-hover>About</a>
+      <a href="#work" data-hover>Work</a>
+      <a href="#reels" data-hover>Reels</a>
+      <a href="#services" data-hover>Services</a>
+      <a href="#contact" data-hover>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <span class="nav__status"><i></i>Available for freelance</span>
+      <a href="#contact" class="btn btn--pill magnetic" data-hover>Let's talk</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#reels">Reels</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <div class="menu__foot">rahulkanda2004@gmail.com</div>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== Hero: the design desk ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__warm" aria-hidden="true"></div>
+
+      <div class="hero__copy">
+        <p class="hero__welcome">welcome to my</p>
+        <h1 class="hero__title" aria-label="Design desk"><span class="hero__t1">design</span><em class="hero__t2">desk.</em></h1>
+        <div class="hero__meta">
+          <b class="hero__year">2026</b>
+          <p>selected works of<br /><b>graphic design, branding, social&nbsp;media, posters, motion &amp; films.</b></p>
+        </div>
+        <p class="hero__sign">
+          <span>— Rahul Kanda</span>
+          <svg viewBox="0 0 220 24" aria-hidden="true"><path pathLength="1" d="M4 16 C 50 6, 110 4, 150 10 S 200 20, 216 8" /></svg>
+        </p>
+        <div class="hero__cta">
+          <a href="#work" class="btn btn--ink magnetic" data-hover>See my work ↘</a>
+          <a href="#reels" class="btn btn--line" data-hover>▶ Watch reels</a>
+        </div>
+      </div>
+
+      <div class="hero__scene" id="scene">
+        <svg class="desk" viewBox="0 0 900 620" role="img" aria-label="Illustrated design desk with a lamp, a monitor showing Rahul's projects, a pinboard of prints and sticky notes, a phone playing a reel and a mug of chai">
+          <defs>
+            <filter id="boil" x="-5%" y="-5%" width="110%" height="110%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="1" seed="1" result="n">
+                <animate attributeName="seed" values="1;3;5;7" dur="0.7s" repeatCount="indefinite" calcMode="discrete" />
+              </feTurbulence>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" />
+            </filter>
+            <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#141414" stroke-width="1.3" /></pattern>
+            <pattern id="cork" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r="0.9" fill="#141414" opacity=".35" /><circle cx="10" cy="11" r="0.7" fill="#141414" opacity=".3" /><circle cx="11" cy="3" r="0.5" fill="#141414" opacity=".25" /></pattern>
+            <radialGradient id="beam" cx="0.32" cy="0" r="1.05">
+              <stop offset="0" stop-color="#ffd76a" stop-opacity=".95" />
+              <stop offset=".55" stop-color="#ffc94a" stop-opacity=".45" />
+              <stop offset="1" stop-color="#ffc94a" stop-opacity="0" />
+            </radialGradient>
+            <clipPath id="screenClip"><rect x="346" y="241" width="328" height="190" rx="4" /></clipPath>
+            <clipPath id="phoneClip"><rect x="5" y="14" width="50" height="92" rx="6" /></clipPath>
+          </defs>
+
+          <!-- ===== wall / pinboard (far layer) ===== -->
+          <g class="layer" data-depth="0.35">
+            <g class="ink">
+              <rect x="400" y="30" width="460" height="300" rx="8" class="paper-fill" />
+              <rect x="414" y="44" width="432" height="272" rx="3" fill="url(#cork)" class="board" />
+              <path class="hatch-fill" d="M846 44 L846 316 L860 330 L860 30 Z" />
+            </g>
+
+            <!-- pinned prints -->
+            <g class="pin" transform="translate(470 58) rotate(-7)" data-id="228187849" tabindex="0" role="button" aria-label="Open Gulaal Carnival">
+              <g class="pin__swing">
+                <rect width="150" height="122" class="print-frame" />
+                <image href="assets/covers/228187849.webp" x="6" y="6" width="138" height="108" preserveAspectRatio="xMidYMid slice" class="art" />
+                <circle cx="75" cy="2" r="7" class="pushpin pushpin--pink" />
+              </g>
+            </g>
+            <g class="pin" transform="translate(640 50) rotate(5)" data-id="191971109" tabindex="0" role="button" aria-label="Open Shreya Ghoshal Live">
+              <g class="pin__swing">
+                <rect width="128" height="104" class="print-frame" />
+                <image href="assets/covers/191971109.webp" x="6" y="6" width="116" height="92" preserveAspectRatio="xMidYMid slice" class="art" />
+                <circle cx="64" cy="2" r="6.5" class="pushpin pushpin--lime" />
+              </g>
+            </g>
+            <g class="pin" transform="translate(712 238) rotate(-4)" data-id="192526783" tabindex="0" role="button" aria-label="Open Virat Kohli Vector Art">
+              <g class="pin__swing">
+                <rect width="118" height="96" class="print-frame" />
+                <image href="assets/covers/192526783.webp" x="6" y="6" width="106" height="84" preserveAspectRatio="xMidYMid slice" class="art" />
+                <circle cx="59" cy="2" r="6" class="pushpin pushpin--orange" />
+              </g>
+            </g>
+
+            <!-- sticky notes -->
+            <g class="note note--yellow" transform="translate(782 66) rotate(9)">
+              <g class="note__peel"><rect width="62" height="62" class="note__paper" /><text x="8" y="24">deadline:</text><text x="8" y="44" class="u">yesterday</text></g>
+            </g>
+            <g class="note note--pink" transform="translate(404 118) rotate(-9)">
+              <g class="note__peel"><rect width="64" height="64" class="note__paper" /><text x="8" y="22">make the</text><text x="8" y="38">logo</text><text x="8" y="56" class="big">BIGGER</text></g>
+            </g>
+            <g class="note note--lime" transform="translate(630 168) rotate(4)">
+              <g class="note__peel"><rect width="58" height="54" class="note__paper" /><text x="7" y="23">client</text><text x="7" y="42">loved it ♡</text></g>
+            </g>
+          </g>
+
+          <!-- ===== desk + objects (middle layer) ===== -->
+          <g class="layer" data-depth="0.7">
+            <!-- light beam (behind objects) -->
+            <polygon class="beam" points="104,350 156,334 430,520 10,520" fill="url(#beam)" />
+
+            <g class="ink">
+              <!-- desk -->
+              <rect x="-20" y="520" width="940" height="22" class="paper-fill" />
+              <rect x="-20" y="542" width="940" height="90" fill="url(#hatch)" class="desk-shade" />
+
+              <!-- monitor -->
+              <rect x="330" y="225" width="360" height="235" rx="14" class="paper-fill" />
+              <path class="paper-fill" d="M522 460 L516 506 L574 506 L568 460 Z" />
+              <rect x="482" y="505" width="126" height="15" rx="7" class="paper-fill" />
+              <path class="hatch-fill" d="M574 506 L568 460 L560 460 L565 506 Z" />
+            </g>
+            <rect x="346" y="241" width="328" height="190" rx="4" class="screen-bg" />
+            <g class="screen" id="screen" clip-path="url(#screenClip)" tabindex="0" role="button" aria-label="Open the project on screen">
+              <image href="assets/covers/228188073.webp" x="346" y="241" width="328" height="190" preserveAspectRatio="xMidYMid slice" class="art is-on" data-id="228188073" />
+              <image href="assets/covers/228187611.webp" x="346" y="241" width="328" height="190" preserveAspectRatio="xMidYMid slice" class="art" data-id="228187611" />
+              <image href="assets/covers/214856783.webp" x="346" y="241" width="328" height="190" preserveAspectRatio="xMidYMid slice" class="art" data-id="214856783" />
+              <image href="assets/covers/214857045.webp" x="346" y="241" width="328" height="190" preserveAspectRatio="xMidYMid slice" class="art" data-id="214857045" />
+              <image href="assets/covers/199126711.webp" x="346" y="241" width="328" height="190" preserveAspectRatio="xMidYMid slice" class="art" data-id="199126711" />
+              <image href="assets/covers/214856223.webp" x="346" y="241" width="328" height="190" preserveAspectRatio="xMidYMid slice" class="art" data-id="214856223" />
+              <rect x="346" y="241" width="328" height="190" class="scanlines" />
+            </g>
+            <text x="510" y="451" class="chin">RK.</text>
+            <text x="352" y="424" class="screen-label" id="screenLabel">Motor Show</text>
+
+            <!-- lamp -->
+            <g class="lamp" id="lamp" tabindex="0" role="button" aria-label="Switch the desk lamp on or off" aria-pressed="false">
+              <g class="ink">
+                <ellipse cx="110" cy="512" rx="56" ry="10" class="paper-fill" />
+                <path class="paper-fill" d="M88 512 L96 494 L124 494 L132 512 Z" />
+                <line x1="110" y1="498" x2="172" y2="392" class="arm" />
+                <line x1="110" y1="498" x2="172" y2="392" class="arm-in" />
+                <line x1="172" y1="392" x2="96" y2="306" class="arm" />
+                <line x1="172" y1="392" x2="96" y2="306" class="arm-in" />
+                <path class="spring" d="M124 470 l8 -6 l-2 10 l8 -6 l-2 10 l8 -6 l-2 10 l8 -6 l-2 10 l8 -6" />
+                <circle cx="172" cy="392" r="9" class="paper-fill" />
+                <circle cx="96" cy="306" r="7" class="paper-fill" />
+                <g transform="translate(96 306) rotate(28)">
+                  <path class="paper-fill lamp-head" d="M-6 -16 L16 -20 L60 32 L4 60 Z" />
+                  <path class="hatch-fill" d="M16 -20 L60 32 L46 40 L8 -10 Z" />
+                </g>
+              </g>
+              <circle cx="122" cy="350" r="11" class="bulb" />
+              <circle cx="110" cy="420" r="70" class="lamp-hit" />
+            </g>
+
+            <!-- pencil jar -->
+            <g class="ink">
+              <path class="pencil pencil--1" d="M205 450 L196 392 M196 392 l-4 -14 l9 12" />
+              <path class="pencil pencil--2" d="M220 450 L224 384 M224 384 l1 -15 l6 15" />
+              <path class="pencil pencil--3" d="M233 450 L250 396 M250 396 l4 -14 l3 17" />
+              <rect x="192" y="446" width="52" height="74" rx="6" class="paper-fill" />
+              <path class="hatch-fill" d="M230 446 L244 446 Q244 520 238 520 L230 520 Z" />
+              <!-- books -->
+              <rect x="252" y="498" width="74" height="22" rx="2" class="paper-fill" />
+              <rect x="260" y="482" width="62" height="16" rx="2" class="paper-fill" />
+              <path class="sketch" d="M258 508 L320 508 M266 490 L316 490" />
+            </g>
+
+            <!-- phone playing a reel -->
+            <g class="phone" id="phone" transform="translate(716 400) rotate(-7)" tabindex="0" role="button" aria-label="Play a reel">
+              <g class="ink"><rect width="60" height="120" rx="11" class="paper-fill" /></g>
+              <image href="assets/reels/1x9wFTt5aCqvvu8LnqIEUJEiJeHjoG2SB.jpg" x="5" y="14" width="50" height="92" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneClip)" class="art" />
+              <circle cx="30" cy="60" r="13" class="phone__play" />
+              <path d="M26 53 L37 60 L26 67 Z" class="phone__tri" />
+              <rect x="22" y="6" width="16" height="3" rx="1.5" fill="#141414" />
+            </g>
+
+            <!-- mug + steam -->
+            <g class="ink">
+              <path class="paper-fill" d="M800 460 L856 460 L852 518 Q851 521 846 521 L810 521 Q805 521 804 518 Z" />
+              <path class="mug-handle" d="M854 474 C 876 472, 878 504, 852 504" />
+              <path class="sketch" d="M808 476 L848 476" />
+              <text x="814" y="500" class="mug-text">chai</text>
+            </g>
+            <g class="steam">
+              <path d="M816 448 C 806 432, 826 422, 814 404" />
+              <path d="M830 446 C 820 428, 842 418, 830 396" />
+              <path d="M843 448 C 834 434, 852 424, 842 408" />
+            </g>
+          </g>
+
+          <!-- ===== foreground ===== -->
+          <g class="layer" data-depth="1">
+            <a href="#contact" class="hire" aria-label="psst — hire me">
+              <g transform="translate(540 548) rotate(3)">
+                <g class="note__peel"><rect width="168" height="48" class="note__paper hire__paper" /><text x="10" y="21">psst… hire me</text><text x="10" y="39">for your next project ♡</text></g>
+              </g>
+            </a>
+            <g class="ink">
+              <path class="paper-fill" d="M48 560 c-14 -4 -16 -22 -2 -28 c4 -12 22 -12 26 0 c14 2 14 22 0 26 c-6 8 -18 8 -24 2 Z" />
+              <path class="sketch" d="M40 546 l14 4 l-6 -10 M58 538 l2 14 l10 -6" />
+            </g>
+          </g>
+
+          <!-- handwritten hint -->
+          <g class="hint" id="lampHint">
+            <path class="hint__arrow" d="M196 236 C 170 250, 150 270, 146 296 M138 286 L146 298 L156 288" />
+            <text x="160" y="226" class="hint__text" id="lampHintText">click the lamp!</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== What I do: taped strip ===== -->
+    <section class="wid-strip" id="whatido" aria-labelledby="widTitle">
+      <svg class="tear tear--top" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="tear__shadow" d="M0 0 L0 19.7 L0 19.7 L14 28.0 L25 25.1 L44 13.0 L66 12.4 L87 13.3 L99 22.2 L129 14.6 L144 27.4 L177 26.1 L196 36.2 L207 33.2 L224 15.1 L237 19.3 L267 16.1 L291 27.7 L310 25.4 L321 13.0 L336 28.7 L356 19.4 L381 23.0 L398 31.6 L424 17.7 L448 24.8 L479 30.0 L496 36.3 L509 22.1 L537 15.3 L559 12.5 L585 30.8 L609 33.6 L626 29.1 L651 26.2 L671 32.8 L704 23.5 L730 13.0 L757 27.9 L791 32.3 L808 21.3 L834 12.1 L855 15.8 L868 13.0 L896 14.8 L912 21.4 L943 13.5 L964 25.4 L995 32.2 L1026 18.5 L1045 20.6 L1077 35.7 L1090 16.0 L1106 17.4 L1128 26.4 L1144 11.6 L1164 20.8 L1187 35.6 L1214 24.5 L1239 28.6 L1250 34.3 L1279 33.6 L1308 21.4 L1328 14.1 L1353 13.1 L1364 16.8 L1378 20.1 L1390 11.5 L1403 14.1 L1422 12.1 L1440 27.0 L1440 0 Z" /><path class="tear__paper" d="M0 0 L0 19.7 L0 19.7 L14 28.0 L25 25.1 L44 13.0 L66 12.4 L87 13.3 L99 22.2 L129 14.6 L144 27.4 L177 26.1 L196 36.2 L207 33.2 L224 15.1 L237 19.3 L267 16.1 L291 27.7 L310 25.4 L321 13.0 L336 28.7 L356 19.4 L381 23.0 L398 31.6 L424 17.7 L448 24.8 L479 30.0 L496 36.3 L509 22.1 L537 15.3 L559 12.5 L585 30.8 L609 33.6 L626 29.1 L651 26.2 L671 32.8 L704 23.5 L730 13.0 L757 27.9 L791 32.3 L808 21.3 L834 12.1 L855 15.8 L868 13.0 L896 14.8 L912 21.4 L943 13.5 L964 25.4 L995 32.2 L1026 18.5 L1045 20.6 L1077 35.7 L1090 16.0 L1106 17.4 L1128 26.4 L1144 11.6 L1164 20.8 L1187 35.6 L1214 24.5 L1239 28.6 L1250 34.3 L1279 33.6 L1308 21.4 L1328 14.1 L1353 13.1 L1364 16.8 L1378 20.1 L1390 11.5 L1403 14.1 L1422 12.1 L1440 27.0 L1440 0 Z" /></svg>
+
+      <svg class="wid-doodle wid-doodle--plane float" viewBox="0 0 80 60" aria-hidden="true"><path d="M4 30 L76 4 L54 56 L38 36 Z M38 36 L76 4 M38 36 L34 52 L46 42" /><path class="dash" d="M2 50 C -20 60, -40 40, -60 52" /></svg>
+      <svg class="wid-doodle wid-doodle--burst spin-slow" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 2 L30 58 M2 30 L58 30 M10 10 L50 50 M50 10 L10 50" /></svg>
+      <svg class="wid-doodle wid-doodle--star" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 4 L36 24 L56 24 L40 36 L46 56 L30 44 L14 56 L20 36 L4 24 L24 24 Z" /></svg>
+      <svg class="wid-doodle wid-doodle--smile float" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="24" /><path d="M20 34 C 24 42, 36 42, 40 34" /><circle cx="22" cy="24" r="1.6" /><circle cx="38" cy="24" r="1.6" /></svg>
+
+      <header class="wid-head">
+        <p class="wid-kicker reveal-up">five things I'm good at</p>
+        <h2 class="wid-title reveal-up" id="widTitle">What I do
+          <svg class="wid-crown" viewBox="0 0 60 40" aria-hidden="true"><path d="M6 34 L4 8 L18 22 L30 4 L42 22 L56 8 L54 34 Z" /></svg>
+        </h2>
+        <svg class="wid-underline" viewBox="0 0 300 20" aria-hidden="true"><path class="draw-line" pathLength="1" d="M6 12 C 80 2, 180 4, 294 10" /><path class="draw-line" pathLength="1" d="M30 18 C 110 10, 200 12, 270 16" /></svg>
+      </header>
+
+      <ol class="wid-row">
+          <li class="wid" style="--k:0">
+            <span class="wid__no" aria-hidden="true">1</span>
+            <button class="wid__card" data-kind="project" data-ref="228187849" data-view="Open" aria-label="Brand identity — open an example">
+              <span class="wid__tape wid__tape--a" aria-hidden="true"></span><span class="wid__tape wid__tape--b" aria-hidden="true"></span>
+              <img src="assets/work/228187849_0.webp" alt="" loading="lazy" style="object-position:center" />
+              
+            </button>
+            <span class="wid__label">Brand identity</span>
+          </li>
+          <li class="wid" style="--k:1">
+            <span class="wid__no" aria-hidden="true">2</span>
+            <button class="wid__card" data-kind="project" data-ref="228187611" data-view="Open" aria-label="Social media — open an example">
+              <span class="wid__tape wid__tape--a" aria-hidden="true"></span><span class="wid__tape wid__tape--b" aria-hidden="true"></span>
+              <img src="assets/work/228187611_0.webp" alt="" loading="lazy" style="object-position:center" />
+              
+            </button>
+            <span class="wid__label">Social media</span>
+          </li>
+          <li class="wid" style="--k:2">
+            <span class="wid__no" aria-hidden="true">3</span>
+            <button class="wid__card" data-kind="project" data-ref="191971109" data-view="Open" aria-label="Posters and print — open an example">
+              <span class="wid__tape wid__tape--a" aria-hidden="true"></span><span class="wid__tape wid__tape--b" aria-hidden="true"></span>
+              <img src="assets/work/191971109_0.webp" alt="" loading="lazy" style="object-position:center" />
+              
+            </button>
+            <span class="wid__label">Posters &amp; print</span>
+          </li>
+          <li class="wid" style="--k:3">
+            <span class="wid__no" aria-hidden="true">4</span>
+            <button class="wid__card" data-kind="video" data-ref="1x9wFTt5aCqvvu8LnqIEUJEiJeHjoG2SB" data-view="Play" aria-label="Video editing — open an example">
+              <span class="wid__tape wid__tape--a" aria-hidden="true"></span><span class="wid__tape wid__tape--b" aria-hidden="true"></span>
+              <img src="assets/reels/1x9wFTt5aCqvvu8LnqIEUJEiJeHjoG2SB.jpg" alt="" loading="lazy" style="object-position:center 30%" />
+              <span class="wid__play" aria-hidden="true">▶</span>
+            </button>
+            <span class="wid__label">Video editing</span>
+          </li>
+          <li class="wid" style="--k:4">
+            <span class="wid__no" aria-hidden="true">5</span>
+            <button class="wid__card" data-kind="project" data-ref="214857045" data-view="Open" aria-label="UI / UX design — open an example">
+              <span class="wid__tape wid__tape--a" aria-hidden="true"></span><span class="wid__tape wid__tape--b" aria-hidden="true"></span>
+              <img src="assets/work/214857045_0.webp" alt="" loading="lazy" style="object-position:top" />
+              
+            </button>
+            <span class="wid__label">UI / UX design</span>
+          </li>
+      </ol>
+
+      <div class="wid-notes">
+        <p class="wid-note wid-note--left reveal-pop">let's create<br />something <span>amazing</span><br />together! ☺</p>
+        <p class="wid-note wid-note--right reveal-pop">tap a card —<br />see the work ♡</p>
+      </div>
+
+      <svg class="tear tear--bottom" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="tear__shadow" d="M0 46 L0 28.6 L0 28.6 L29 24.7 L51 21.5 L85 18.8 L99 18.1 L115 19.8 L131 14.2 L149 19.4 L173 16.6 L184 16.6 L207 21.3 L235 31.8 L255 14.0 L282 30.6 L302 28.2 L319 34.6 L349 31.5 L382 17.4 L405 30.0 L434 21.4 L448 27.3 L460 29.3 L470 23.0 L492 14.5 L513 24.2 L532 34.2 L563 34.0 L579 12.2 L598 14.4 L625 18.2 L638 18.7 L658 30.1 L679 19.1 L705 12.6 L720 28.9 L748 14.1 L760 24.3 L785 11.9 L806 18.5 L818 15.8 L835 23.3 L848 27.2 L879 28.8 L890 27.9 L915 11.7 L935 28.0 L967 35.0 L991 26.4 L1024 16.8 L1046 13.1 L1075 28.0 L1090 16.5 L1113 30.5 L1126 19.7 L1148 18.1 L1179 29.8 L1212 27.7 L1239 18.7 L1261 22.4 L1282 13.1 L1313 15.4 L1334 35.0 L1356 33.5 L1372 23.3 L1391 19.7 L1410 22.8 L1440 36.1 L1440 46 Z" /><path class="tear__paper" d="M0 46 L0 28.6 L0 28.6 L29 24.7 L51 21.5 L85 18.8 L99 18.1 L115 19.8 L131 14.2 L149 19.4 L173 16.6 L184 16.6 L207 21.3 L235 31.8 L255 14.0 L282 30.6 L302 28.2 L319 34.6 L349 31.5 L382 17.4 L405 30.0 L434 21.4 L448 27.3 L460 29.3 L470 23.0 L492 14.5 L513 24.2 L532 34.2 L563 34.0 L579 12.2 L598 14.4 L625 18.2 L638 18.7 L658 30.1 L679 19.1 L705 12.6 L720 28.9 L748 14.1 L760 24.3 L785 11.9 L806 18.5 L818 15.8 L835 23.3 L848 27.2 L879 28.8 L890 27.9 L915 11.7 L935 28.0 L967 35.0 L991 26.4 L1024 16.8 L1046 13.1 L1075 28.0 L1090 16.5 L1113 30.5 L1126 19.7 L1148 18.1 L1179 29.8 L1212 27.7 L1239 18.7 L1261 22.4 L1282 13.1 L1313 15.4 L1334 35.0 L1356 33.5 L1372 23.3 L1391 19.7 L1410 22.8 L1440 36.1 L1440 46 Z" /></svg>
+    </section>
+
+    <!-- ===== About (paper) ===== -->
+    <section class="about paper" id="about">
+      <svg class="doodle doodle--a1 float" viewBox="0 0 120 50" aria-hidden="true"><path class="draw stroke-pink" pathLength="1" d="M6 34 C 18 6, 32 6, 42 26 S 66 46, 78 22 S 102 2, 114 26" /></svg>
+      <svg class="doodle doodle--a2 spin-slow" viewBox="0 0 100 100" aria-hidden="true"><path class="fill-lime" d="M50 0 L58 30 L88 12 L70 40 L100 50 L70 60 L88 88 L58 70 L50 100 L42 70 L12 88 L30 60 L0 50 L30 40 L12 12 L42 30 Z" /></svg>
+      <svg class="doodle doodle--a3 float" viewBox="0 0 100 100" aria-hidden="true"><path class="fill-pink" d="M50 0 C55 35 65 45 100 50 C65 55 55 65 50 100 C45 65 35 55 0 50 C35 45 45 35 50 0Z" /></svg>
+      <svg class="doodle doodle--a4 float" viewBox="0 0 100 90" aria-hidden="true"><path class="draw stroke-blue" pathLength="1" d="M50 84 C 20 60, 4 44, 6 26 C 8 8, 32 2, 50 24 C 68 2, 92 8, 94 26 C 96 44, 80 60, 50 84 Z" /></svg>
+      <svg class="doodle doodle--a5 float" viewBox="0 0 120 60" aria-hidden="true"><path class="draw stroke-blue" pathLength="1" d="M8 50 C 8 20, 30 20, 30 40 C 30 56, 14 50, 22 30 C 30 10, 52 12, 52 36 C 52 52, 38 48, 46 28 C 54 8, 78 10, 78 34 C 78 50, 64 46, 72 26 C 80 8, 104 12, 112 30" /></svg>
+
+      <div class="about__wrap">
+        <div class="about__left">
+          <div class="ticket reveal-pop" id="ticket">
+            <span class="ticket__tape" aria-hidden="true"></span>
+            <div class="ticket__hello" aria-hidden="true"><span>HE</span><span>LLO</span></div>
+            <div class="ticket__body">
+              <h2 class="ticket__title">About me</h2>
+              <p>I'm Rahul — a creative, detail-obsessed graphic designer &amp; video editor with nearly 3 years in agencies. I build brand identities, scroll-stopping social creatives, event branding and punchy edits that make brands impossible to ignore.</p>
+            </div>
+          </div>
+
+          <ul class="notes">
+            <li class="reveal-up"><span>✎</span> designs, deadlines &amp; too much chai</li>
+            <li class="reveal-up"><span>✦</span> currently at Brandure Creative Agency</li>
+            <li class="reveal-up"><span>♡</span> posters, reels &amp; bold type</li>
+          </ul>
+
+          <div class="stickers">
+            <div class="sticker sticker--pink reveal-pop"><b data-count="3">0</b><sup>+</sup><span>years</span></div>
+            <div class="sticker sticker--lime reveal-pop"><b data-count="21">0</b><sup>+</sup><span>projects</span></div>
+            <div class="sticker sticker--lilac reveal-pop"><b data-count="12">0</b><span>films</span></div>
+          </div>
+
+          <a class="resume-btn reveal-up" href="https://www.behance.net/gallery/249091341/Creative-Graphic-Design-Portfolio-Showcase-for-2026" target="_blank" rel="noopener" data-hover>
+            <span class="resume-btn__icon" aria-hidden="true">↓</span>
+            <span><b>Download my resume</b><small>View on Behance ↗</small></span>
+          </a>
+        </div>
+
+        <div class="about__right">
+          <div class="info reveal-up">
+            <h3 class="info__title"><i class="tri tri--pink" aria-hidden="true"></i>Experience</h3>
+            <ol class="tl">
+              <li><span class="tl__date">Oct 2024 — Present</span><b>Graphic Designer · Brandure Creative Agency</b><span>Social media marketing, branding, campaigns, event creatives &amp; video edits.</span></li>
+              <li><span class="tl__date">Aug 2023 — Sep 2024</span><b>Graphic Designer · I-Monk Creative Agency</b><span>Identities &amp; social content for retail, F&amp;B, education and healthcare.</span></li>
+            </ol>
+          </div>
+          <div class="info reveal-up">
+            <h3 class="info__title"><i class="tri tri--green" aria-hidden="true"></i>Education</h3>
+            <ol class="tl">
+              <li><span class="tl__date">2022 — 2025</span><b>Bachelor of Arts · DAV College</b></li>
+              <li><span class="tl__date">2021 — 2022</span><b>12th (C.B.S.E) · GMSSS, Sector 21, Chandigarh</b></li>
+              <li><span class="tl__date">2019 — 2020</span><b>10th (C.B.S.E) · GMSSS, MHC</b></li>
+            </ol>
+          </div>
+          <div class="info info--split reveal-up">
+            <div>
+              <h3 class="info__title"><i class="tri tri--blue" aria-hidden="true"></i>Abilities</h3>
+              <p>Brand identity · Social media creatives · Posters &amp; print · UI/UX · Motion graphics · Video editing</p>
+            </div>
+            <div>
+              <h3 class="info__title"><i class="tri tri--pink" aria-hidden="true"></i>Software</h3>
+              <div class="tools">
+                <span class="tool tool--ps" data-hover>Ps</span><span class="tool tool--ai" data-hover>Ai</span><span class="tool tool--pr" data-hover>Pr</span><span class="tool tool--xd" data-hover>Xd</span><span class="tool tool--fg" data-hover>Figma</span><span class="tool tool--dv" data-hover title="DaVinci Resolve">DaVinci</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Selected work: stacked cards ===== -->
+    <section class="selected section" id="work">
+      <header class="sec-head">
+        <p class="eyebrow reveal-up">(02) — Selected work</p>
+        <h2 class="sec-title st">Featured <em>projects</em></h2>
+        <p class="sec-lead reveal-up">Five campaigns I'm proud of. Scroll — they stack up like a pile of prints on my desk. Tap any card to open the full project.</p>
+      </header>
+      <div class="stack" id="stack"></div>
+    </section>
+
+    <!-- ===== All work ===== -->
+    <section class="workfolio section" id="workfolio">
+      <header class="sec-head sec-head--row">
+        <div>
+          <p class="eyebrow reveal-up">(03) — The archive</p>
+          <h2 class="sec-title st">Work<em>folio</em></h2>
+        </div>
+        <div class="filters reveal-up" role="tablist" aria-label="Filter projects" id="filters"></div>
+      </header>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- ===== Reels ===== -->
+    <section class="reels section" id="reels">
+      <svg class="doodle doodle--r1 spin-slow" viewBox="0 0 100 100" aria-hidden="true"><path class="fill-pink" d="M50 0 C55 35 65 45 100 50 C65 55 55 65 50 100 C45 65 35 55 0 50 C35 45 45 35 50 0Z" /></svg>
+      <header class="sec-head sec-head--row">
+        <div>
+          <p class="eyebrow reveal-up">(04) — Motion &amp; video</p>
+          <h2 class="sec-title st">Reels <em>&amp;</em> films</h2>
+        </div>
+        <div class="reels__ctrl reveal-up">
+          <div class="filters filters--sm" role="tablist" aria-label="Filter films" id="vfilters"></div>
+          <div class="reels__arrows">
+            <button class="arrow" id="reelPrev" aria-label="Scroll reels left" data-hover>←</button>
+            <button class="arrow" id="reelNext" aria-label="Scroll reels right" data-hover>→</button>
+          </div>
+        </div>
+      </header>
+      <div class="reels__track" id="reelTrack"></div>
+      <div class="reels__bar" aria-hidden="true"><i id="reelBar"></i></div>
+      <p class="reels__more reveal-up">Hover to pause · drag, swipe or use the arrows</p>
+    </section>
+
+    <!-- ===== Services (paper) ===== -->
+    <section class="services paper" id="services">
+      <svg class="doodle doodle--s1 float" viewBox="0 0 120 50" aria-hidden="true"><path class="draw stroke-pink" pathLength="1" d="M6 34 C 18 6, 32 6, 42 26 S 66 46, 78 22 S 102 2, 114 26" /></svg>
+      <header class="sec-head sec-head--row">
+        <div>
+          <p class="eyebrow reveal-up">(05) — What I do</p>
+          <h2 class="sec-title st">Services</h2>
+        </div>
+        <p class="sec-lead reveal-up">From the first logo sketch to the final reel export — one designer, the whole visual story.</p>
+      </header>
+      <ul class="svc" id="svc">
+        <li class="svc__item" data-img="assets/covers/228187849.webp" data-hover>
+          <span class="svc__no">01</span><h3>Brand identity</h3><p>Logos, visual systems and guidelines that give a business a face people remember.</p><span class="svc__arrow">↗</span>
+        </li>
+        <li class="svc__item" data-img="assets/covers/228187611.webp" data-hover>
+          <span class="svc__no">02</span><h3>Social media creatives</h3><p>Posts, carousels, infographics and ad campaigns tuned for engagement.</p><span class="svc__arrow">↗</span>
+        </li>
+        <li class="svc__item" data-img="assets/covers/191971109.webp" data-hover>
+          <span class="svc__no">03</span><h3>Posters &amp; print</h3><p>Event branding, concert posters, standees and large-format print.</p><span class="svc__arrow">↗</span>
+        </li>
+        <li class="svc__item" data-img="assets/reels/1x9wFTt5aCqvvu8LnqIEUJEiJeHjoG2SB.jpg" data-hover>
+          <span class="svc__no">04</span><h3>Video editing &amp; motion</h3><p>Event promos, TV adverts, talking-head reels and motion posters with clean pacing.</p><span class="svc__arrow">↗</span>
+        </li>
+        <li class="svc__item" data-img="assets/covers/214857045.webp" data-hover>
+          <span class="svc__no">05</span><h3>UI / UX design</h3><p>App and website interfaces in Figma — flows to polished, high-fidelity screens.</p><span class="svc__arrow">↗</span>
+        </li>
+      </ul>
+      <div class="svc-float" id="svcFloat" aria-hidden="true"><img alt="" /></div>
+    </section>
+
+    <!-- ===== Kind words (testimonials) ===== -->
+    <section class="words section" id="words" hidden>
+      <svg class="doodle doodle--w1 spin-slow" viewBox="0 0 100 100" aria-hidden="true"><path class="fill-lime" d="M50 0 L58 30 L88 12 L70 40 L100 50 L70 60 L88 88 L58 70 L50 100 L42 70 L12 88 L30 60 L0 50 L30 40 L12 12 L42 30 Z" /></svg>
+      <header class="sec-head sec-head--row">
+        <div>
+          <p class="eyebrow reveal-up">(06) — Kind words</p>
+          <h2 class="sec-title st">Clients <em>say</em></h2>
+        </div>
+        <p class="sec-lead reveal-up">A few notes pinned to the wall after the work went live. <span class="words__flag" id="wordsFlag" hidden>Sample quotes — replace with real ones before going live</span></p>
+      </header>
+      <ul class="words__wall" id="wordsWall"></ul>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <svg class="doodle doodle--c1 spin-slow" viewBox="0 0 100 100" aria-hidden="true"><path class="fill-lime" d="M50 0 L58 30 L88 12 L70 40 L100 50 L70 60 L88 88 L58 70 L50 100 L42 70 L12 88 L30 60 L0 50 L30 40 L12 12 L42 30 Z" /></svg>
+      <svg class="doodle doodle--c2 float" viewBox="0 0 100 90" aria-hidden="true"><path class="draw stroke-pink" pathLength="1" d="M50 84 C 20 60, 4 44, 6 26 C 8 8, 32 2, 50 24 C 68 2, 92 8, 94 26 C 96 44, 80 60, 50 84 Z" /></svg>
+      <p class="eyebrow reveal-up">(07) — Contact</p>
+      <h2 class="contact__title">
+        <span class="line"><span class="reveal-line">Got a project?</span></span>
+        <span class="line"><span class="reveal-line"><em>Let's make it</em> <b>bold.</b></span></span>
+      </h2>
+      <a class="contact__mail magnetic" href="mailto:rahulkanda2004@gmail.com" data-hover>rahulkanda2004@gmail.com <span>↗</span></a>
+      <div class="contact__row">
+        <a href="#" class="chip chip--wa" id="waChip" target="_blank" rel="noopener" data-hover>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="tel:+918837710867" class="chip" data-hover>☎ +91 88377 10867</a>
+        <a href="https://www.behance.net/rahulkanda26" target="_blank" rel="noopener" class="chip" data-hover>Bē Behance</a>
+        <a href="https://www.behance.net/gallery/249091341/Creative-Graphic-Design-Portfolio-Showcase-for-2026" target="_blank" rel="noopener" class="chip" data-hover>↓ Resume</a>
+        <a href="https://www.behance.net/rahulkanda26" target="_blank" rel="noopener" class="chip chip--accent" data-hover>Hire me ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shapes" aria-hidden="true">
+      <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#ff5b1f" /></svg>
+      <svg viewBox="0 0 100 100"><path d="M50 0 C55 35 65 45 100 50 C65 55 55 65 50 100 C45 65 35 55 0 50 C35 45 45 35 50 0Z" fill="#c5f04a" /></svg>
+      <svg viewBox="0 0 100 100"><path d="M0 100 A50 50 0 0 1 100 100 Z" transform="translate(0 -25)" fill="#b9a7ff" /></svg>
+      <svg viewBox="0 0 100 100"><g fill="#ff4fa3"><circle cx="50" cy="22" r="22" /><circle cx="78" cy="50" r="22" /><circle cx="50" cy="78" r="22" /><circle cx="22" cy="50" r="22" /><circle cx="50" cy="50" r="18" /></g></svg>
+      <svg viewBox="0 0 100 100"><path d="M50 4 L96 92 L4 92 Z" fill="#f3f0ea" /></svg>
+      <svg viewBox="0 0 100 100"><path d="M6 60 C 20 20, 34 20, 44 56 S 70 92, 94 40" fill="none" stroke="#5b5fe0" stroke-width="14" stroke-linecap="round" /></svg>
+      <svg viewBox="0 0 100 100"><rect x="8" y="8" width="84" height="84" rx="26" fill="#ff5b1f" /></svg>
+      <svg viewBox="0 0 100 100"><path d="M38 0h24v38h38v24H62v38H38V62H0V38h38z" fill="#c5f04a" /></svg>
+    </div>
+    <div class="footer__big" aria-hidden="true">That's a wrap.</div>
+    <div class="footer__row">
+      <span>© <span id="year">2026</span> Rahul Kanda</span>
+      <span>Designed with intent — and a lot of colour</span>
+      <a href="https://www.behance.net/gallery/249091341/Creative-Graphic-Design-Portfolio-Showcase-for-2026" target="_blank" rel="noopener" data-hover>↓ Download resume</a>
+      <a href="#top" data-hover>Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ===== Floating WhatsApp ===== -->
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat with Rahul on WhatsApp" data-hover>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+    <span class="wa-float__tip">Chat on WhatsApp</span>
+  </a>
+
+  <!-- ===== Project modal ===== -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" id="modalPanel">
+      <button class="modal__close" data-close aria-label="Close project">✕</button>
+      <header class="modal__head">
+        <p class="modal__cat" id="modalCat"></p>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <dl class="modal__meta">
+          <div><dt>Client</dt><dd id="modalClient"></dd></div>
+          <div><dt>Tools</dt><dd id="modalTools"></dd></div>
+        </dl>
+        <p class="modal__desc" id="modalDesc"></p>
+        <div class="case" id="modalCase" hidden>
+          <div class="case__col"><span class="case__k">01 · The brief</span><p id="caseBrief"></p></div>
+          <div class="case__col"><span class="case__k">02 · The idea</span><p id="caseIdea"></p></div>
+          <div class="case__col"><span class="case__k">03 · The outcome</span><p id="caseOutcome"></p></div>
+        </div>
+      </header>
+      <div class="modal__media" id="modalMedia"></div>
+      <footer class="modal__foot">
+        <button class="btn btn--ghost" id="modalPrev" data-hover>← <span id="modalPrevName">Previous</span></button>
+        <a class="btn btn--pill" id="modalLink" target="_blank" rel="noopener" data-hover>View on Behance ↗</a>
+        <button class="btn btn--ghost" id="modalNext" data-hover><span id="modalNextName">Next</span> →</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ===== Video modal ===== -->
+  <div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-labelledby="vTitle" hidden>
+    <div class="vmodal__backdrop" data-vclose></div>
+    <div class="vmodal__box">
+      <div class="vmodal__frame" id="vFrame"></div>
+      <div class="vmodal__meta">
+        <span class="vmodal__tag" id="vTag"></span>
+        <h3 class="vmodal__title" id="vTitle"></h3>
+        <p class="vmodal__client" id="vClient"></p>
+        <p class="vmodal__note" id="vNote">Playing from Google Drive — if it takes a second, it's buffering.</p>
+        <div class="vmodal__nav">
+          <button class="arrow" id="vPrev" aria-label="Previous film" data-hover>←</button>
+          <a class="btn btn--pill" id="vDrive" target="_blank" rel="noopener" data-hover>Open in Drive ↗</a>
+          <button class="arrow" id="vNext" aria-label="Next film" data-hover>→</button>
+        </div>
+      </div>
+      <button class="vmodal__close" data-vclose aria-label="Close video">✕</button>
+    </div>
+  </div>
+
+  <script src="js/data.js?v=18"></script>
+  <script src="js/main.js?v=18"></script>
+</body>
+</html>
