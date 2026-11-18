@@ -548,7 +548,7 @@
     }
     const media = $("#modalMedia");
     const n = p.gallery.length;
-    media.classList.toggle("is-grid", n > 1 && p.cat !== "ui");
+    media.classList.toggle("is-grid", n > 1 && p.cat !== "ui" && !p.stack);
     media.style.setProperty("--cols", n % 3 === 0 ? 3 : 2);
     if (p.embeds.length) {
       const v = p.embeds.length;

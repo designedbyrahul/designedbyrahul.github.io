@@ -3,12 +3,15 @@
    images live in assets/covers (<id>.webp) and assets/work (<id>_<n>.webp)
 ------------------------------------------------------------------- */
 const BEHANCE = "https://www.behance.net/gallery/";
+const PORTFOLIO = BEHANCE + "249091341/Creative-Graphic-Design-Portfolio-Showcase-for-2026";
 const ccv = (id) => `https://www-ccv.adobe.io/v1/player/ccv/${id}/embed?api_key=behance1&bgcolor=%230c0c0e`;
 
 window.CATEGORIES = [
   { key: "all", label: "All Work" },
   { key: "social", label: "Social Media" },
   { key: "event", label: "Events & Posters" },
+  { key: "brand", label: "Logos & Branding" },
+  { key: "print", label: "Print" },
   { key: "ui", label: "UI / UX" },
   { key: "motion", label: "Motion & Video" },
   { key: "art", label: "Illustration" },
@@ -44,6 +47,46 @@ window.PROJECTS = [
     cat: "motion", year: 2025, imgs: 0, tools: ["Photoshop", "Premiere Pro"],
     videos: ["SVbzYf-MHBo", "VtwGTLo_2AK", "2CGP3bRanDn"],
     desc: "Static posters brought to life — subtle motion, timed reveals and kinetic type that turn a feed post into a moment.",
+  },
+  {
+    id: "rk-logos", link: PORTFOLIO, title: "Logofolio", client: "Elira by Savina · Brandure · CityHeart · CHD · Sujeeva Clinic",
+    cat: "brand", imgs: 2, stack: true, tools: ["Illustrator", "Photoshop"],
+    desc: "A collection of logos designed for clients. Elira by Savina — a bird carrying a thread, soft earthy tones and minimal type for a handcrafted fashion boutique — alongside marks for Brandure, CityHeart Consultancy, CHD Catering House and Sujeeva Clinic.",
+  },
+  {
+    id: "rk-expo-print", link: PORTFOLIO, title: "Billboards, Posters & Standees", client: "Lusaka Happening · Sonalika",
+    cat: "print", imgs: 3, stack: true, tools: ["Photoshop", "Illustrator"],
+    desc: "Large-format print for Zambia's expos — an airport billboard for Solwezi MMA Expo, wall posters, and roll-up standees for Mazabuka Agri Expo and the Copperbelt Motor & Mining Show. Built to be read from a distance, with dates, venue and QR tickets up front.",
+  },
+  {
+    id: "rk-chai", link: PORTFOLIO, title: "Chai Churi", client: "Café Social Media",
+    cat: "social", imgs: 6, tools: ["Photoshop"],
+    desc: "Social media posts for a chai café in Mohali — a warm beige-and-brown palette, big stacked type and hero food shots, from the grand-opening announcement to everyday menu posts.",
+  },
+  {
+    id: "rk-table", link: PORTFOLIO, title: "Table Stands", client: "Lahore Wali Gali",
+    cat: "print", imgs: 3, tools: ["Photoshop"],
+    desc: "Restaurant table stands — one drink or dessert per card, moody photography, a gold price badge and a single line of script that does the selling.",
+  },
+  {
+    id: "rk-lahore", link: PORTFOLIO, title: "Lahore Wali Gali", client: "Restaurant Social Media",
+    cat: "social", imgs: 3, tools: ["Photoshop"],
+    desc: "Social posts for a restaurant — a 'We are open' launch creative, a dish spotlight and a Sunday-brunch offer, all in warm, low-key tones with elegant serif type.",
+  },
+  {
+    id: "rk-jewel", link: PORTFOLIO, title: "Jewel Say", client: "Jewellery App",
+    cat: "ui", imgs: 1, tools: ["Figma"],
+    desc: "A dark, premium shopping app for jewellery — onboarding, sign-in, home, categories, product page, bag and payment screens designed so the pieces stay the hero.",
+  },
+  {
+    id: "rk-cards", link: PORTFOLIO, title: "Business Cards", client: "Lusaka Happening · Sujeeva Clinic",
+    cat: "brand", imgs: 2, tools: ["Illustrator", "Photoshop"],
+    desc: "Business card designs — a bold orange-and-black card for an events company and a clean green-and-white card for a clinic, each carrying the brand onto print.",
+  },
+  {
+    id: "rk-piara", link: PORTFOLIO, title: "School Website", client: "Piara Waters Primary School",
+    cat: "ui", imgs: 1, tools: ["Figma"],
+    desc: "A homepage design for a primary school — a photo-led hero, clear navigation and events and news blocks parents can scan quickly.",
   },
   {
     id: "214856783",
@@ -142,7 +185,7 @@ window.PROJECTS = [
 window.PROJECTS.forEach((p) => {
   p.cover = `assets/covers/${p.id}.webp`;
   p.gallery = Array.from({ length: p.imgs }, (_, i) => `assets/work/${p.id}_${i}.webp`);
-  p.url = BEHANCE + p.id + "/" + p.slug;
+  p.url = p.link || BEHANCE + p.id + "/" + p.slug;
   p.embeds = (p.videos || []).map(ccv);
 });
 
