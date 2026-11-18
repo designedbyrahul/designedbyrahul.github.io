@@ -503,6 +503,10 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; }
 .sticker--pink { background: var(--pink); --rest: rotate(-6deg); }
 .sticker--lime { background: var(--lime); --rest: rotate(5deg); margin-top: 18px; }
 .sticker--lilac { background: var(--lilac); --rest: rotate(-3deg); }
+.sticker-note { display: flex; align-items: center; gap: 10px; align-self: center; }
+.sticker-note svg { flex: none; width: clamp(44px, 4.4vw, 62px); fill: none; stroke: var(--ink); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.sticker-note p { font-family: var(--f-hand); font-weight: 700; font-size: clamp(24px, 2.3vw, 32px); line-height: 1.1; color: var(--ink); transform: rotate(-3deg); }
+.sticker-note mark { color: inherit; padding: 0 5px; background: linear-gradient(transparent 52%, var(--lime) 52%); }
 
 .about__right { display: grid; gap: clamp(28px, 3.4vw, 44px); padding-top: 10px; }
 .info__title { display: flex; align-items: center; gap: 14px; font-size: clamp(1.3rem, 2.2vw, 2rem); color: var(--blue); margin-bottom: 14px; }
